@@ -1,0 +1,320 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.625;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to top, rgba(255, 61, 61, 0.2), rgba(255, 61, 61, 0.2));
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), 
+    rgba(54, 54, 54, 0.5) 39.24%, 
+    rgba(54, 54, 54, 0.5)),
+    url(img/cake.jpg) center center / cover no-repeat;
+    color: white;
+    min-height: 388px;
+    max-height: 388px;
+}
+
+.topbar {
+    padding: 18px 0;
+    font-size: .875rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.topbar a:hover {
+    color: #FF3D3D;
+    transition: color 300ms;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.baseline {
+    padding: 30px 0 70px 0;
+    text-align: center;
+}
+
+.baseline-welcome {
+    font-family: "Pinyon Script", cursive;
+    color: #FF3D3D;
+    font-size: 2rem;
+    line-height: 1;
+    display: block;
+    font-weight: 300;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.baseline-name {
+    padding-bottom: 10px;
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.baseline-slogan {
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-button {
+    display: inline-block;
+    border: solid 1px #FF3D3D;
+    padding: 7px 10px;
+    margin-top: 10px;
+}
+
+.topbar .menu-button:hover {
+    background-color: #FF3D3D;
+    color: white;
+    transition: 600ms;
+}
+
+.container-small {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.home-section {
+    display: block;
+    padding-top: 9px;
+}
+
+.block {
+    margin-bottom: 50px;
+}
+
+.block-text {
+    color: #6F6F6F;
+}
+
+.title {
+    font-size: 1.75rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin: 1rem 0 0 0;
+}
+
+.title span {
+    font-family: "Pinyon Script", cursive;
+    color: #FF3D3D;
+    font-size: 2.5rem;
+    display: block;
+    text-transform: none;
+}
+
+.title::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: #FF3D3D;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.block-centered .title::before {
+    display: inline-block;
+    vertical-align: 50%;
+}
+
+.more {
+    color: #FF3D3D;
+}
+
+.more::after {
+    content: " >";
+}
+
+.more:hover {
+    text-decoration: underline;
+}
+
+.block-img {
+    text-align: center;
+}
+
+.block-img img {
+    display: inline-block;
+}
+
+.block-body {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.block-centered {
+    text-align: center;
+}
+
+.ingredients-menu  {
+    font-weight: 600;
+    color: #383838;
+    text-align: center;
+}
+
+.ingredients-menu a {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.ingredients-menu .active {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.ingredients-menu .active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #FF3D3D;
+}
+
+@media only screen and (min-width: 920px) {
+    body, html {
+        font-size: 16px;
+    }
+
+    .header {
+       /* background: none;
+        color: grey; */
+        width: auto;
+        height: 612px;
+        margin: 0 auto 0 auto;
+    }
+
+    .baseline-slogan {
+        font-size: 1.5rem;
+        transform: translateY(-7px);
+    }
+
+    .baseline-name {
+        font-size: 4.375rem;
+        letter-spacing: 12.5px;
+        margin-left: 12px;
+        transform: translateY(-7px);
+    }
+
+    .baseline-welcome {
+        font-size: 3.75rem;
+        transform: translateY(-13px);
+        margin-bottom: 5px;
+    }
+
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 28px 0px 27px;
+    }
+
+    .menu-button {
+        padding: 8px 52px;
+        margin-left: 14px;
+    }
+
+    .baseline {
+        display: inline;
+        padding: 115px 0;
+    }
+
+    .menu {
+        margin-right: 30px;
+        transform: translateY(-12px);
+    }
+
+    .menu a {
+        color: grey;
+        letter-spacing: 2px;
+    }
+    
+    .logo a {
+        letter-spacing: 2px;
+    }
+
+    .block-left, .block-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .block-left .block-img {
+        flex: none;
+        width: 350px;
+        margin-left: 50px;
+    }
+
+    .block-left .block-body {
+        margin-left: 94px;
+    }
+
+    .block-right .block-img {
+        flex: none;
+        width: 350px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 40px;
+        order: 2;
+    }
+
+    .title {
+        margin-bottom: 1.1rem;
+    }
+
+    .title::before {
+        margin-bottom: 10px;
+    }
+
+    .block-img::before {
+        content: "";
+        border: solid 2px #FF3D3D;
+        width: 350px;
+        height: 425px;
+        position: absolute;
+    }
+
+    .block-left .block-img::before {
+        transform: translate(-30px, -7%);
+    }
+
+    .block-right .block-img::before {
+        transform: translate(28px, -5%);
+    }
+
+}
